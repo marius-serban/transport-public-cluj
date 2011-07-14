@@ -12,10 +12,13 @@ Avem patru posibilitati de implementare a aplicatiei pe dispozitive mobile:
 Avantaje:
   * cross-platfom
   * trebuie sa invatam/folosim doar HTML5
+  * costuri de dezvoltare minime (daca alegem PHP cred ca e un mediu familiar pentru toti)
+  * probabil, va trebui sa avem si o versiune web a aplicatiei
 
 Dezavantaje:
   * user-ul trebuie sa viziteze pagina din browser (optional userul poate adauga bookmark-uri manual pe home screen pe iPhone si Android)
   * performante mai scazute
+  * acces limitat la functiile telefonului
 
 = Aplicatie nativa =
 
