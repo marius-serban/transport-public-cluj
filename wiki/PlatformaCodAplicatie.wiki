@@ -1,6 +1,6 @@
 #summary Avantaje si dezavantaje ale diferitelor platforme pentru cod
 
-= Native app vs Web app =
+= Diverse platforme pentru aplicatie =
 Avem patru posibilitati de implementare a aplicatiei pe dispozitive mobile:
  * aplicatie web
  * aplicatie nativa
