@@ -1,4 +1,4 @@
-#summary Key features of the mobile context
+#summary Trivia: Key features of the mobile context
 
 = Mobile context =
 
