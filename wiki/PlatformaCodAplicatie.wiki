@@ -1,4 +1,5 @@
 #summary Avantaje si dezavantaje ale diferitelor platforme pentru cod
+#labels Phase-Design,Featured
 
 = Diverse platforme pentru aplicatie =
 Avem patru posibilitati de implementare a aplicatiei pe dispozitive mobile:
