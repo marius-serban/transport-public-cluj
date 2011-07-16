@@ -1,6 +1,9 @@
 #summary Specificatiile si cerintele aplicatiei
 #labels Phase-Requirements,Featured
 
+= Output-ul proiectului =
+  # Aplicatie brower-based mobila
+
 = Funcții =
   * afiseaza in cat timp vine un autobus pe o anumita linie intr-o anumita statie
   * afiseaza lista cu liniile de autobus in functie de relevanta (locatia utilizatorului)
@@ -22,6 +25,3 @@
   * Aplicatia trebuie sa foloseasca doar tehnologii free (Javascript (eventual JQuery), HTML5, CSS3)
   * Aplicatia va folosi mecanismul de cache al browser-ului pt a stoca "baza de date" (care probabil va fi formata din simple fisiere text)
   * Logica aplicatiei va fi scrisa in Javascript
-
-= Output-ul proiectului =
-  # Aplicatie web mobila
