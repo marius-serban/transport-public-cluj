@@ -5,7 +5,7 @@
 Avem patru posibilitati de implementare a aplicatiei pe dispozitive mobile:
  * aplicatie web
  * aplicatie nativa
- * aplicatie nativa care foloseste un WebView (un fel de browser in cadrul aplicatiei)
+ * aplicatie nativa care foloseste un WebView (un fel de browser in cadrul aplicatiei) (sau PhoneGap)
  * aplicatie scrisa pentru un framework/builder care genereaza cod nativ (gen Appcelerator Titanium sau altele)
 
 = Aplicatie web =
@@ -32,12 +32,13 @@ Dezavantaje:
   * trebuie scris cod pentru fiecare platforma separat
   * trebuie invatate multe limbaje/API-uri
 
-= Aplicatie nativa cu WebView = 
+= Aplicatie nativa cu WebView (eg.PhoneGap) = 
 
 Avantaje:
   * aplicatia poate fi 90% web si 10% nativa deci ar fi mai putin de invatat decat 100% nativ
   * avem acces la toate functiile telefonului (partea nativa poate oferi acces partii web)
   * aplicatia poate sa aiba icoana pe home-screen la fel de simplu ca si in cazul aplicatiilor native
+  * Phonegap ofera acel 10% din aplicatie sub forma unui API javascript accesibil prin obiectul "navigator"
 
 Dezavantaje:
   * ne limitam doar la platformele care suporta WebView (iPhone, Android, BlackBerry)
