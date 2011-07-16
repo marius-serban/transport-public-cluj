@@ -3,6 +3,7 @@
 
 = Output-ul proiectului =
   # Aplicatie brower-based mobila
+  # Documentatie proiect care sa descrie in amanunt aplicatia
 
 = Funcții =
   * afiseaza in cat timp vine un autobus pe o anumita linie intr-o anumita statie
