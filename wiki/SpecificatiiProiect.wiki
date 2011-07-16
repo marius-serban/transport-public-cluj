@@ -1,5 +1,5 @@
 #summary Specificatiile si cerintele aplicatiei
-#labels Phase-Requirements
+#labels Phase-Requirements,Featured
 
 = Funcții =
   * afiseaza in cat timp vine un autobus pe o anumita linie intr-o anumita statie
