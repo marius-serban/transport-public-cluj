@@ -17,3 +17,8 @@
 
 = Constrângeri pentru design = 
   * aplicatia trebuie sa ruleze pe platformele cele mai frecvente (Android >2.2, iOS, BlackBerry, eventual Nokia S60)
+
+= Date tehnice =
+  * Aplicatia trebuie sa foloseasca doar tehnologii free (Javascript (eventual JQuery), HTML5, CSS3)
+  * Aplicatia va folosi mecanismul de cache al browser-ului pt a stoca "baza de date" (care probabil va fi formata din simple fisiere text)
+  * Logica aplicatiei va fi scrisa in Javascript
