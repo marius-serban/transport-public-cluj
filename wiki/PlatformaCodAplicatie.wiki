@@ -16,7 +16,7 @@ Avantaje:
   * probabil, va trebui sa avem si o versiune web a aplicatiei
 
 Dezavantaje:
-  * user-ul trebuie sa viziteze pagina din browser (optional userul poate adauga bookmark-uri manual pe home screen pe iPhone si Android)
+  * user-ul trebuie sa viziteze pagina din browser, deci sa stie pe de rost si sa scrie URL-ul de fiecare data cand acceseaza aplicatia (optional userul poate adauga bookmark-uri manual chiar pe home screen pe iPhone si Android)
   * performante mai scazute
   * acces limitat la functiile telefonului
 
