@@ -28,4 +28,6 @@
   * Logica aplicatiei va fi scrisa in Javascript
 
 = Baza de date =
-http://code.google.com/images/code_sm.png
+E ceva mai complicat cu design-ul bazei de date decat am crezut la inceput. E prima versiune, urmeaza sa mai lucrez la ea. Daca crezi ca trebuie ceva in plus/in minus/altfel astept propuneri.
+
+http://www.download-muzica.ro/Images/db_diagram.png
