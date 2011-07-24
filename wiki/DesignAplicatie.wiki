@@ -1,0 +1,2 @@
+#summary Design-ul aplicatiei: tehnologii folosite, structura UI, structura bazei de date
+#labels Featured,Phase-Design
