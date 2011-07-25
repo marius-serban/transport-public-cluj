@@ -2,5 +2,5 @@
 #labels Featured,Phase-Design
 
 = Baza de date =
-O prima versiune.
-http://www.download-muzica.ro/Images/db_diagram.png
+O a doua versiune.
+http://www.download-muzica.ro/Images/db_diagram_v1.1.0.png
