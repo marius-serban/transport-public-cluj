@@ -18,4 +18,4 @@ Aplicatia are urmatoarele ecrane:
    * afiseaza cate minute mai sunt pana vine autobusul
    * afiseaza ora de plecare de la capatul de linie
    * are butoane de navigare pentru afisare autobus urmator/precedent
-http://transport-public-cluj.googlecode.com/files/wireframe.png
+http://transport-public-cluj.googlecode.com/svn/trunk/Documentatie/User%20Interface/wireframe.png
