@@ -3,7 +3,7 @@
 
 = Baza de date =
 O a doua versiune.
-http://www.download-muzica.ro/Images/db_diagram_v1.1.0.png
+http://transport-public-cluj.googlecode.com/svn/trunk/Documentatie/Baza%20de%20date/db_diagram_v1.1.0.png
 
 = User Interface =
 Aplicatia are urmatoarele ecrane:
