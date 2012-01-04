@@ -443,13 +443,20 @@ ul.stopsList {
 
 ul.stopsList li {
 	display: block;
+	border-bottom: 1pt solid black;
+}
+
+ul.stopsList li button {
 	font-size: 12pt;
 	padding: 8pt 0;
 	padding-left: 10pt;
 	margin: 0;
-	border-bottom: 1pt solid black;
+	background-color: white;
+	border: 0;
+	display: block;
+	width: 100%;
+	text-align: left;
 }
-
 
 ul.navigation {
 	list-style-type: none;
