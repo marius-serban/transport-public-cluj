@@ -2,7 +2,7 @@
 <!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
-<html class="no-js">
+<html class="no-js" manifest="cache.appcache">
 <!--<![endif]-->
 
 <head>
@@ -15,7 +15,7 @@
 <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
 <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
 <!-- For iPhone 4 with high-resolution Retina display: -->
@@ -55,12 +55,49 @@
 
 <body>
 
-	<div id="container">
-		<header> Header </header>
+	<ul id="navigation" class="hidden">
+		<li class="lines"><button type="button" name="linesNavButton">linii</button></li>
+		<li class="stops"><button type="button" name="stationsNavButton">statii</button></li>
+		<li class="bus"><button type="button" name="busNavButton">bus</button></li>
+	</ul>
+	
+	<div id="container-stations">
 
-		<div id="main" role="main">
+        <header> Statii </header>
+        
+        <div class="main" role="main">
+            <div class="searchform">
+                <input type="text" name="queryStations" />
+            </div>
+            <h1 class="stopsListTitle hidden">Favorite</h1>
+            <ul class="stopsList hidden">
+                <li><button type="button">Statie 1</button></li>
+                <li><button type="button">Statie 2</button></li>
+                <li><button type="button">Statie 3</button></li>
+            </ul>
+            <h1 class="stopsListTitle hidden">Sugerate</h1>
+            <ul class="stopsList hidden">
+                <li><button type="button">Statie 1</button></li>
+                <li><button type="button">Statie 2</button></li>
+                <li><button type="button">Statie 3</button></li>
+            </ul>
+            <h1 class="stopsListTitle"></h1>
+            <ul class="stopsList" id="allStations">
+                <li><button type="button">Statie 1</button></li>
+                <li><button type="button">Statie 2</button></li>
+                <li><button type="button">Statie 3</button></li>
+            </ul>
+        </div>
+
+    </div>
+	
+	<div id="container-lines" class="hidden">
+
+		<header> Linii </header>
+		
+		<div class="main" role="main">
 			<form class="searchform">
-				<input type="text" name="query" />
+				<input type="text" name="queryLines" />
 			</form>
 			<h1 class="stopsListTitle">Favorite</h1>
 			<ul class="stopsList">
@@ -82,16 +119,32 @@
 			</ul>
 		</div>
 
-		<footer>
-			<ul class="navigation">
-				<li class="lines">linii</li>
-				<li class="stops">statii</li>
-				<li class="bus">bus</li>
-			</ul>
-		</footer>
 	</div>
-	<!--! end of #container -->
 
+	<div id="container-bus" class="hidden">
+
+		<header> Plecare: Unirii 19</header>
+		
+		<div class="main" role="main">
+			<div class="timeDetails">
+				<button type="button" class="previousBus">&larr;</button>
+				<span class="minutesLeftValue">-30</span>
+				<span class="minutesLeftUnit">min</span>
+				<button type="button" class="nextBus">&rarr;</button>
+			</div>
+			<div class="busDetails">
+				<span class="lineNumber">Linia 25</span>,
+				<span class="stationName">Memorandumului</span>
+			</div>
+		</div>
+
+		<div class="advertising">Reclama</div>
+
+	</div>
+
+	<footer>
+		footer stuff
+	</footer>
 
 	<!-- JavaScript at the bottom for fast page loading -->
 
@@ -109,7 +162,10 @@
 			footer.style.backgroundColor = ['red', 'yellow', 'green'][(Math.random()*3).toFixed(0)];
 		});*/
 	</script>
-
+	<script src="js/utils.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/main.js"></script>
+	
 	<!-- Debugger - remove for production -->
 	<!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
 
