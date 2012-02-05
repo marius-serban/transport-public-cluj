@@ -395,15 +395,13 @@ header {
 	border-bottom: 2pt solid black;
 }
 
-#main {
+.main {
 	background-color: white;
 }
 
 footer {
-	background-color: blue;
+	background-color: #2D2D2D;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
 }
 
 .searchform input {
@@ -443,7 +441,7 @@ ul.stopsList {
 
 ul.stopsList li {
 	display: block;
-	border-bottom: 1pt solid black;
+	border-top: 1pt solid black;
 }
 
 ul.stopsList li button {
@@ -456,36 +454,90 @@ ul.stopsList li button {
 	display: block;
 	width: 100%;
 	text-align: left;
+/* 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
 }
 
-ul.navigation {
+#navigation {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	background-color: grey;
 }
 
-ul.navigation li {
+#navigation li {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 	border: 0;
-	width: 33.3%;
+	width: 33%;
+}
+
+#navigation li button {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: none;
 	height: 45pt;
+	width: 100%;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-ul.navigation li.lines {
+#navigation li.lines {
 }
 
-ul.navigation li.stops {
+#navigation li.stops {
 	background-color: red;
 }
 
-ul.navigation li.bus {
-	width: auto;
+#navigation li.bus {
+	width: 32%;
 }
 
+div.timeDetails {
+	margin: 25pt 0 20pt 0;
+}
+button.previousBus, button.nextBus {
+	display: inline-block;
+	font-size: 20pt;
+	line-height: 60pt;
+	margin: 0;
+	border: 0;
+	width: 15%;
+	vertical-align: top;
+}
 
+span.minutesLeftValue {
+	display: inline-block;
+	width: 45%;
+	font-size: 60pt;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: right;
+}
 
+span.minutesLeftUnit {
+	display: inline-block;
+	width: 22%;
+	font-size: 20pt;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: left;
+}
+
+div.busDetails {
+	font-size: 16pt;
+	margin-bottom: 20pt;
+	text-align: center;
+}
+
+div.advertising {
+	background-color: red;
+	font-size: 45pt;
+	text-align: center;
+}
 /*
  * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
  */
