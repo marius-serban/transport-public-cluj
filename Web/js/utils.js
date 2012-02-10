@@ -1,4 +1,5 @@
 // Utils singleton class
+try {
 var Utils = (function() {
 	var thisClass = function(){};
 
@@ -11,9 +12,9 @@ var Utils = (function() {
 
 	// static function that switches between containers
 	thisClass.prototype.switchToContainer = function(destinationContainer) {
-		linesContainer.setAttribute("class", "hidden");
-		stationsContainer.setAttribute("class", "hidden");
-		busContainer.setAttribute("class", "hidden");
+		thisClass.prototype.linesContainer.setAttribute("class", "hidden");
+		thisClass.prototype.stationsContainer.setAttribute("class", "hidden");
+		thisClass.prototype.busContainer.setAttribute("class", "hidden");
 		destinationContainer.removeAttribute("class");
 	};
 	
@@ -40,3 +41,6 @@ var Utils = (function() {
 	
 	return thisClass;
 })();
+} catch (e) {
+	alert('utils error');
+}

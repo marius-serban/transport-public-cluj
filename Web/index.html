@@ -2,7 +2,7 @@
 <!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
-<html class="no-js" manifest="cache.appcache">
+<html class="no-js">
 <!--<![endif]-->
 
 <head>
@@ -51,6 +51,7 @@
 <script>
 	Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')
 </script>
+
 </head>
 
 <body>
@@ -63,60 +64,28 @@
 	
 	<div id="container-stations">
 
-        <header> Statii </header>
+        <header> Statia </header>
         
         <div class="main" role="main">
-            <div class="searchform">
+            <from class="searchform">
                 <input type="text" name="queryStations" />
-            </div>
-            <h1 class="stopsListTitle hidden">Favorite</h1>
-            <ul class="stopsList hidden">
-                <li><button type="button">Statie 1</button></li>
-                <li><button type="button">Statie 2</button></li>
-                <li><button type="button">Statie 3</button></li>
-            </ul>
-            <h1 class="stopsListTitle hidden">Sugerate</h1>
-            <ul class="stopsList hidden">
-                <li><button type="button">Statie 1</button></li>
-                <li><button type="button">Statie 2</button></li>
-                <li><button type="button">Statie 3</button></li>
-            </ul>
-            <h1 class="stopsListTitle"></h1>
-            <ul class="stopsList" id="allStations">
-                <li><button type="button">Statie 1</button></li>
-                <li><button type="button">Statie 2</button></li>
-                <li><button type="button">Statie 3</button></li>
-            </ul>
+            </form>
+            <h1 class="listTitle"></h1>
+            <ul class="list" id="allStations"></ul>
         </div>
 
     </div>
 	
 	<div id="container-lines" class="hidden">
 
-		<header> Linii </header>
+		<header> Linia </header>
 		
 		<div class="main" role="main">
 			<form class="searchform">
 				<input type="text" name="queryLines" />
 			</form>
-			<h1 class="stopsListTitle">Favorite</h1>
-			<ul class="stopsList">
-				<li><button type="button">Statie 1</button></li>
-				<li><button type="button">Statie 2</button></li>
-				<li><button type="button">Statie 3</button></li>
-			</ul>
-			<h1 class="stopsListTitle">Sugerate</h1>
-			<ul class="stopsList">
-				<li><button type="button">Statie 1</button></li>
-				<li><button type="button">Statie 2</button></li>
-				<li><button type="button">Statie 3</button></li>
-			</ul>
-			<h1 class="stopsListTitle">Toate</h1>
-			<ul class="stopsList">
-				<li><button type="button">Statie 1</button></li>
-				<li><button type="button">Statie 2</button></li>
-				<li><button type="button">Statie 3</button></li>
-			</ul>
+			<h1 class="listTitle"></h1>
+			<ul class="list" id="allLines"></ul>
 		</div>
 
 	</div>
@@ -156,15 +125,15 @@
 		// iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
 		MBP.scaleFix();
 		MBP.hideUrlBar();
-		
+
 		/*var footer = document.getElementsByTagName('footer').item(0).firstChild;
 		document.getElementById('main').addEventListener('touchmove', function() {
 			footer.style.backgroundColor = ['red', 'yellow', 'green'][(Math.random()*3).toFixed(0)];
 		});*/
 	</script>
 	<script src="js/utils.js"></script>
-	<script src="js/database.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/main.js"></script>
 	
 	<!-- Debugger - remove for production -->
 	<!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
