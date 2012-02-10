@@ -1,3 +1,4 @@
+try {
 // Database class
 var Database = (function(){
 	// private member
@@ -100,4 +101,6 @@ var Database = (function(){
     return Database;
 })();
 
-
+} catch (e) {
+	alert('database error');
+}

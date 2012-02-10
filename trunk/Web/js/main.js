@@ -1,3 +1,4 @@
+try {
 (function() {
 	// get a reference to the utility stuff
 	var utils = new Utils();
@@ -45,7 +46,14 @@
 		});
 	}
 
-	
+	// set the stations click handlers
+	var selectedStation;
+	new MBP.fastButton(utils.stationsList, function(event){
+		selectedStation = event.target;
+		utils.switchToContainer(utils.linesContainer);
+	});
 
 })();
-
+} catch (e) {
+	alert('main error');
+}
